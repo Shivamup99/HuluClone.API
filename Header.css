@@ -1,0 +1,66 @@
+.header{
+    display: flex;
+    /* background-color: black; */
+    padding: 20px;
+    color:#fff;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll ;
+    
+}
+/* From w3 school for scroll bar showing below the header  */
+.header::-webkit-scrollbar{
+    display: none;
+}
+.header{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.header_icons{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.header_icon > .MuiSvgIcon-root{
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 25px;
+}
+.header_icon{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    cursor: pointer;
+    transition: transform 50ms ease-out;
+    
+}
+.header_icon:hover >p{
+    display: inline-flex;
+    color: brown;
+}
+.header_icon:hover{
+    color: brown;
+}
+.header_icon >p{
+    display: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: small;
+
+}
+.header_icon--active >p {
+    display: inline-flex !important;
+    color: brown;
+}
+.home{
+    color: brown;
+}
+.header >img{
+    object-fit: contain;
+    height: 70px;
+    border-radius: 20px;
+    width: 200px
+}
